@@ -1,0 +1,17 @@
+{
+  "exposeRootElement" : true,
+  "beforeLoad": [
+    {
+      "element": "root",
+      "apply": "getText",
+      "matcher": {
+        "type": "stringEquals",
+        "args": [
+          {
+            "value": "text"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "pageObjectsRootDir": "",
+  "pageObjectsOutputDir": "",
+  "resourcesOutputDir": "",
+  "lint": {
+    "throwError": true,
+    "duplicateSelectors": {
+      "violation" : "error"
+    }
+  }
+}

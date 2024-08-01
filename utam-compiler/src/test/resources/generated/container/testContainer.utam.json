@@ -1,0 +1,77 @@
+{
+  "description": {
+    "text": [
+      "test container element getter compiles"
+    ]
+  },
+  "elements": [
+    {
+      "name": "scopePrivate",
+      "selector": {
+        "css": "scope"
+      },
+      "elements": [
+        {
+          "description": {
+            "text": [
+              "bugfix test: scoped frame inside private element would not compile"
+            ]
+          },
+          "public": true,
+          "type": "container",
+          "name": "scopedContainer",
+          "selector": {
+            "css": "scopedContainer"
+          }
+        },
+        {
+          "name": "scopeInScope",
+          "selector": {
+            "css": "scope[%s]",
+            "args": [
+              {
+                "type": "string",
+                "name": "scopeStrArg"
+              }
+            ]
+          },
+          "elements": [
+            {
+              "description": {
+                "text": [
+                  "bugfix test: scoped element inside private element would not compile"
+                ]
+              },
+              "public": true,
+              "name": "scopedInScopeContainer",
+              "type": "container"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "text": [
+          "test simple getter for container element"
+        ]
+      },
+      "public": true,
+      "type": "container",
+      "name": "container",
+      "selector": {
+        "css": "container"
+      }
+    }
+  ],
+  "methods": [
+    {
+      "name": "composeContainer",
+      "compose": [
+        {
+          "element": "container"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "description": {
+    "text": [
+      "test frame element getter compiles"
+    ]
+  },
+  "elements": [
+    {
+      "name": "scopePrivate",
+      "selector": {
+        "css": "scope"
+      },
+      "elements": [
+        {
+          "description": {
+            "text": [
+              "bugfix test: scoped frame inside private element would not compile"
+            ]
+          },
+          "public": true,
+          "type": "frame",
+          "name": "scopedFrame",
+          "selector": {
+            "css": "scopedFrame"
+          }
+        },
+        {
+          "name": "scopeInScope",
+          "selector": {
+            "css": "scope[%s]",
+            "args": [
+              {
+                "type": "string",
+                "name": "scopeStrArg"
+              }
+            ]
+          },
+          "elements": [
+            {
+              "description": {
+                "text": [
+                  "bugfix test: scoped element inside private element would not compile"
+                ]
+              },
+              "public": true,
+              "name": "scopedInScopeFrame",
+              "type": "frame",
+              "selector": {
+                "css": "scopedInScopeFrame"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

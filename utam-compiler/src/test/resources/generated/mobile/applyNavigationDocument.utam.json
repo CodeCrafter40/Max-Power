@@ -1,0 +1,45 @@
+{
+  "methods": [
+    {
+      "name": "test",
+      "compose": [
+        {
+          "element": "navigation",
+          "apply": "back"
+        },
+        {
+          "element": "navigation",
+          "apply": "forward"
+        },
+        {
+          "element": "navigation",
+          "apply": "switchToWindow",
+            "args": [
+              {
+                "name": "url1",
+                "type": "string"
+              }
+            ]
+        },
+        {
+          "element": "navigation",
+          "apply": "closeWindow",
+          "args": [
+            {
+              "name": "url2",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "element": "navigation",
+          "apply": "closeWindow"
+        },
+        {
+          "element": "document",
+          "apply": "getUrl"
+        }
+      ]
+    }
+  ]
+}

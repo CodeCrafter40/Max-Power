@@ -1,0 +1,15 @@
+{
+  "beforeLoad": [
+    {
+      "element" : "root",
+      "apply" : "isPresent"
+    },
+    {
+      "element" : "root",
+      "apply": "getText"
+    },
+    {
+      "apply": "returnSelf"
+    }
+  ]
+}

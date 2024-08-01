@@ -1,0 +1,33 @@
+{
+  "elements": [
+    {
+      "name": "myFrame",
+      "type": "frame",
+      "selector": {
+        "css": "iframe"
+      }
+    }
+  ],
+  "methods": [
+    {
+      "name": "test",
+      "compose" : [
+        {
+          "returnType" : "rootPageObject",
+          "element": "document",
+          "apply": "enterFrameAndLoad",
+          "args" : [
+            {
+              "name" : "myFrame",
+              "type": "frame"
+            },
+            {
+              "name": "pageObject",
+              "type": "rootPageObject"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

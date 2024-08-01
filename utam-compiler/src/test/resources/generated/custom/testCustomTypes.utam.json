@@ -1,0 +1,77 @@
+{
+  "elements": [
+    {
+      "name": "scopePrivate",
+      "selector": {
+        "css": "scope"
+      },
+      "elements": [
+        {
+          "description": {
+            "text": [
+              "bugfix test: scoped element inside private element would not compile"
+            ]
+          },
+          "public": true,
+          "type": "generated-basic/pageObjects/testBasicTypes",
+          "name": "scopedCustom",
+          "selector": {
+            "css": "scopedCustom"
+          }
+        },
+        {
+          "name": "scopeInScope",
+          "selector": {
+            "css": "scope[%s]",
+            "args": [
+              {
+                "type": "string",
+                "name": "scopeStrArg"
+              }
+            ]
+          },
+          "elements": [
+            {
+              "description": {
+                "text": [
+                  "bugfix test: scoped element inside private element would not compile"
+                ]
+              },
+              "public": true,
+              "type": "generated-basic/pageObjects/testBasicTypes",
+              "name": "scopedInScopeCustom",
+              "selector": {
+                "css": "scopedInScopeCustom"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "nullable": true,
+      "public": true,
+      "type": "generated-basic/pageObjects/testBasicTypes",
+      "selector": {
+        "css": "css"
+      }
+    },
+    {
+      "name": "testWithFilter",
+      "nullable": true,
+      "public": true,
+      "type": "generated-basic/pageObjects/testBasicTypes",
+      "selector": {
+        "css": "css",
+        "returnAll": true
+      },
+      "filter": {
+        "apply": "isVisible",
+        "matcher": {
+          "type": "isTrue"
+        }
+      }
+    }
+  ]
+}

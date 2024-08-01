@@ -1,0 +1,19 @@
+{
+  "pageObjectsRootDir": "",
+  "pageObjectsOutputDir": "",
+  "resourcesOutputDir": "",
+  "lint": {
+    "lintingOutputFile": "test.sarif.json",
+    "requiredRootDescription": {
+      "violation": "error"
+    },
+    "duplicateSelectors": {
+      "violation": "disabled"
+    },
+    "requiredMethodDescription": {
+      "exclude": [
+        "utam/pageObjects/test"
+      ]
+    }
+  }
+}

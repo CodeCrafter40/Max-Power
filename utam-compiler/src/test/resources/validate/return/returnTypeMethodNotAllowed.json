@@ -1,0 +1,13 @@
+{
+  "methods" : [
+    {
+      "name" : "test",
+      "returnType" : "container",
+      "compose" : [
+        {
+          "element" : "root"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "elements": [
+    {
+      "name": "myFrame",
+      "type": "frame",
+      "selector": {
+        "css": "iframe"
+      }
+    }
+  ],
+  "methods": [
+    {
+      "name": "test",
+      "compose" : [
+        {
+          "element": "document",
+          "returnType": "my/lightning/button",
+          "apply": "enterFrameAndLoad",
+          "args" : [
+            {
+              "value": "myFrame",
+              "type" : "elementReference"
+            },
+            {
+              "value": "my/lightning/button",
+              "type" : "rootPageObject"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

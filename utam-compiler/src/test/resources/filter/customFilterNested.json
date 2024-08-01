@@ -1,0 +1,52 @@
+{
+  "elements": [
+    {
+      "name": "scope",
+      "selector": {
+        "css": "selector1 %s",
+        "args": [
+          {
+            "name": "scopeArg",
+            "type": "string"
+          }
+        ]
+      },
+      "elements": [
+        {
+          "name": "test",
+          "public": true,
+          "type": "utam-test/pageObjects/test/test",
+          "selector": {
+            "css": "%s",
+            "returnAll": true,
+            "args": [
+              {
+                "name": "selectorArg",
+                "type": "string"
+              }
+            ]
+          },
+          "filter": {
+            "apply": "customMethod",
+            "args": [
+              {
+                "name": "applyArg",
+                "type": "string"
+              }
+            ],
+            "matcher": {
+              "type": "stringEquals",
+              "args": [
+                {
+                  "name": "matcherArg",
+                  "type": "string"
+                }
+              ]
+            },
+            "findFirst": true
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "description": {
+    "text": [
+      "test basic element getter compiles"
+    ]
+  },
+  "elements": [
+    {
+      "name": "scopePrivate",
+      "selector": {
+        "css": "scope"
+      },
+      "elements": [
+        {
+          "name": "scopeInScope",
+          "selector": {
+            "css": "scope[%s]",
+            "args": [
+              {
+                "type": "string",
+                "name": "scopeStrArg"
+              }
+            ]
+          },
+          "elements": [
+            {
+              "description": {
+                "text": [
+                  "bugfix test: scoped element inside private element would not compile"
+                ]
+              },
+              "public": true,
+              "name": "scopedInScopeBasic",
+              "selector": {
+                "css": "scopedInScopeBasic"
+              }
+            }
+          ]
+        },
+        {
+          "description": {
+            "text": [
+              "bugfix test: scoped element inside private element would not compile"
+            ]
+          },
+          "public": true,
+          "name": "scopedBasic",
+          "selector": {
+            "css": "scopedBasic"
+          }
+        }
+      ]
+    },
+    {
+      "description": {
+        "text": [
+          "test simple getter for basic element"
+        ]
+      },
+      "public": true,
+      "name": "test",
+      "selector": {
+        "css": ".css"
+      }
+    }
+  ],
+  "methods" : [
+    {
+      "name" : "getText",
+      "compose" : [
+        {
+          "element" : "root",
+          "apply" : "getText"
+        }
+      ]
+    }
+  ]
+}
