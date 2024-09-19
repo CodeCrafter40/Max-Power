@@ -17,12 +17,16 @@ The product is designed to streamline and automate the client's end-to-end busin
 ## Integrations and Tech Stack  
 
 
+## Tech Stack
+
 ![Java](https://img.shields.io/badge/Java-17-007396?style=for-the-badge&logo=java)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.6.6-6DB33F?style=for-the-badge&logo=springboot)
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)
 ![jQuery](https://img.shields.io/badge/jQuery-3.6.0-0769AD?style=for-the-badge&logo=jquery)
+![Salesforce](https://img.shields.io/badge/Salesforce-55B4F3?style=for-the-badge&logo=salesforce)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql)
 ![Maven](https://img.shields.io/badge/Maven-3.8.6-C71A36?style=for-the-badge&logo=apachemaven)
+
 
 
 - **Frontend:** JQuery  
